@@ -13,5 +13,5 @@ import java.util.List;
 @AllArgsConstructor(staticName = "aResource")
 public class TransactionsResource {
 
-    private List<Transaction> items;
+    private List<TransactionResource> items;
 }
