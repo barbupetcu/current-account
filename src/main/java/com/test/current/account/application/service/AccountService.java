@@ -1,10 +1,10 @@
 package com.test.current.account.application.service;
 
-import com.test.current.account.api.model.CreateAccountRequest;
+import com.test.current.account.application.model.CreateAccountCommand;
 
 public interface AccountService {
 
-    Long createAccount(CreateAccountRequest createAccountRequest);
+    Long createAccount(CreateAccountCommand command);
     void closeAccount(Long accountId);
 
 }

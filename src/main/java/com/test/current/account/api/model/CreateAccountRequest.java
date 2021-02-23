@@ -1,14 +1,16 @@
 package com.test.current.account.api.model;
 
 import com.test.current.account.infrastructure.commons.CustomJsonSerializable;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CreateAccountRequest implements CustomJsonSerializable {
 
     @NotBlank(message = "name is required")
